@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portofolio | Mutiaa</title>
+        <link rel="stylesheet" href="project.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <div class="header">
+        <div id="menu-icon" class="menu-icon">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="logo">
+            <h1>Mutiaa</h1>
+            <ul id="menu-list" class="hidden">
+                <li>
+                    <a href="index.html">HOME</a>
+                </li>
+                <li>
+                    <a href="about.html">ABOUT ME</a>
+                </li>
+                <li>
+                    <a href="#" class="active">PROJECT</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Projects</h1>
+        <div class="kotak-projek">
+            <div class="text-content">
+                <h3>FRONT END & WEB DEVELOPER</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quisquam nostrum accusantium quidem doloremque adipisci recusandae eligendi officia, veniam repellat porro nobis odit eveniet, error facere nisi ex doloribus at!</p>
+                <a href="link-ke-code-1" target="_blank" class="btn-code">Link Code</a>
+            </div>
+            <img src="ESERTIFIKAT MUFTI MUTIA RAHMAH_page-0001.jpg" alt="Projek 1">
+        </div>
+        <div class="kotak-projek">
+            <div class="text-content">
+                <h3>WEBSITE KOPERASI SKENDA</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quisquam nostrum accusantium quidem doloremque adipisci recusandae eligendi officia, veniam repellat porro nobis odit eveniet, error facere nisi ex doloribus at!</p>
+                <a href="link-ke-code-2" target="_blank" class="btn-code">Link Code</a>
+            </div>
+            <img src="MUFTI MUTIA RAHMAH sertifikat_page-0001.jpg" alt="Projek 2">
+        </div>
+        <div class="kotak-projek">
+            <div class="text-content">
+                <h3>Project name 01</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quisquam nostrum accusantium quidem doloremque adipisci recusandae eligendi officia, veniam repellat porro nobis odit eveniet, error facere nisi ex doloribus at!</p>
+                <a href="link-ke-code-3" target="_blank" class="btn-code">Link Code</a>
+            </div>
+            <img src="ESERTIFIKAT MUFTI MUTIA RAHMAH_page-0001.jpg" alt="Projek 3">
+        </div>
+    </div>    
+
+    <script>
+        const menuIcon = document.getElementById("menu-icon");
+        const menuList = document.getElementById("menu-list");
+
+        menuIcon.addEventListener("click", () => {
+            menuList.classList.toggle("hidden");
+        });
+    </script>
+</body>
+</html>

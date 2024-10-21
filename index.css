@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body {
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+    font-family: 'Poppins';
+}
+.header {
+    width: 100%;
+    height: 82px;
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+    flex-wrap: wrap;
+    background: #fff;
+}
+.logo {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+.logo h1 {
+    background: linear-gradient(#ffe4ca , #cecbc9); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+}
+.menu-icon {
+    font-size: 25px;
+    display: none;
+}
+.logo ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+}
+  
+.logo ul li a {
+    color: #191919;
+    padding: 8px 0;
+}
+.logo a:hover {
+    color: #007bff;
+}
+.logo a.active {
+    color: #007bff; 
+}
+.container {
+    background: linear-gradient(to right, #E6DACE 40%, #fff 40%);
+    height: 100vh;
+    display: flex;
+    position: relative;
+}
+.kotak-image {
+    width: 330px;
+    height: 379px;
+    background-color: #F4ECE6;
+    margin-left: 270px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1), 
+                0px -4px 10px rgba(0, 0, 0, 0.1), 
+                4px 0px 10px rgba(0, 0, 0, 0.1), 
+                -4px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    align-items: center;
+    transform: translateY(26%);
+}
+.kotak-image img {
+    width: 150px;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    border-radius: 80%;
+}
+.kotak-image h2 {
+    margin-top: 30px;
+}
+.kotak-image p {
+    margin-top: 20px;
+    letter-spacing: 10px;
+}
+.kotak-image footer {
+    height: 50px;
+    background-color: #fff;
+    margin-top: 22.5px;
+}
+.kotak-image a {
+    line-height: 50px;
+    margin: 5px;
+    font-size: 17px;
+    color: black;
+}
+.teks-kanan {
+    transform: translateY(18%);
+    margin-left: 30px;
+    width: 400px;
+}
+.teks-kanan h1 {
+    font-size: 100px;
+}
+.teks-kanan h5 {
+    font-size: 25px;
+}
+.teks-kanan button {
+    width: 100px;
+    height: 30px;
+    border: 0.5px solid #000;
+    border-radius: 25px;
+    background-color: #fff;
+    margin-top: 30px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.teks-kanan button:hover {
+    background-color: #007bff; 
+    color: white; 
+}
+.btn.about {
+    background-color: #007bff; 
+    color: white; 
+    border: 1px solid #007bff;
+}
+.btn.projects {
+    margin-left: 10px;
+}
+.btn.about:hover {
+    background-color: white;
+    color: #007bff;
+    border: 1.5px solid #007bff;
+}
+.btn.projects:hover {
+    background-color: #007bff;
+    color: white;
+    border: 1px solid #007bff;
+}
+.teks-kanan p {
+    margin-top: 30px;
+    letter-spacing: 1px;
+}
+.footer {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 20px;
+}
+
+.footer-text {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    font-size: 15px;
+}
+
+.span-kanan {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap; 
+    margin-left: 390px;
+    width: 100%; 
+}
+
+.span1, .span2, .span3 {
+    flex-wrap: wrap;
+    text-align: center;
+    flex: 1;
+    margin: 30px;
+    min-width: 120px;
+}
+
+.span-kanan p {
+    font-size: 13px;
+    margin: 0;
+    white-space: nowrap; 
+}
+
+.span3 a {
+    text-decoration: none;
+    color: black;
+    margin: 5px;
+}
+
+.span-kanan h5 {
+    margin-bottom: 10px;
+    white-space: nowrap; 
+}
+
+@media (max-width: 768px) {
+    body {
+        font-family: 'Poppins';
+    }
+    .header {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .logo {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .logo h1 {
+        display: none;
+    }
+    .logo ul {
+        flex-direction: column;
+    }
+    .logo ul.hidden {
+        display: none;
+    }
+    .logo ul li a:hover {
+        color: #007bff;
+    }
+    .menu-icon {
+        display: flex;
+        cursor: pointer;
+        margin-left: 10px;
+        margin-top: 33px;
+    }
+    .container {
+        flex-direction: column;
+        height: auto;
+        padding: 55px;
+        background: linear-gradient(to top, #E6DACE 63%, #fff 40%);
+    }
+    .kotak-image {
+        margin-left: 0;
+        width: 100%;
+        height: auto;
+        margin-top: -90px;
+    }
+    .teks-kanan {
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .teks-kanan h1 {
+        margin-left: 0;
+        text-align: left;
+        font-size: 40px;
+        margin-top: 60px;
+    }
+
+    .teks-kanan h5 {
+        font-size: 18px;
+        text-align: left;
+        margin-top: 5px;
+    }
+
+    .teks-kanan button {
+        width: 100px;
+        height: 30px;
+        float: left;
+        margin-top: 15px;
+    }
+    .teks-kanan p {
+        text-align: left;
+        font-size: 15px;
+        margin-top: 10px;
+        float: left;
+    }
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footer-text {
+        margin-left: 0;
+        order: 2;
+        margin-bottom: 20px;
+    }
+    .span-kanan {
+        flex-wrap: wrap;
+        width: 100%;
+        margin-left: 0;
+    }
+    .span1, .span2, .span3 {
+        margin: 40px;
+        max-width: 200px;
+        text-align: left;
+    }
+}

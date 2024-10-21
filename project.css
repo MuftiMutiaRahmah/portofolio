@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body {
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+    font-family: 'Poppins';
+}
+.header {
+    width: 100%;
+    height: 82px;
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+    flex-wrap: wrap;
+    background: #fff;
+}
+.logo {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+.logo h1 {
+    background: linear-gradient(#ffe4ca , #cecbc9); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+}
+.menu-icon {
+    font-size: 25px;
+    display: none;
+}
+.logo ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+}
+.logo ul li a {
+    color: #191919;
+    padding: 8px 0;
+}
+.logo a:hover {
+    color: #007bff;
+}
+.logo a.active {
+    color: #007bff; 
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+    background-color: #E6DACE;
+    padding: 20px;
+}
+.container h1 {
+    padding: 20px;
+}
+
+.kotak-projek {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    max-width: 800px; 
+    height: auto;
+    background-color: white;
+    margin: 20px auto; 
+    padding: 20px; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.03), 
+                0px -4px 10px rgba(0, 0, 0, 0.03), 
+                4px 0px 10px rgba(0, 0, 0, 0.03), 
+                -4px 0px 10px rgba(0, 0, 0, 0.03);
+}
+.text-content {
+    flex: 1; 
+    text-align: left;
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start; 
+    padding-top: 20px;
+}
+.kotak-projek h3 {
+    color: #007bff;
+    margin: 0; 
+}
+.kotak-projek p {
+    margin: 20px 0; 
+    text-align: justify; 
+}
+.btn-code {
+    display: inline-block;
+    text-align: center;
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff; 
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.btn-code:hover {
+    background-color: #0077f7; 
+}
+.kotak-projek img {
+    width: 40%;
+    height: auto; 
+    object-fit: cover;
+    margin-left: 20px; 
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 20px;
+}
+.footer-text {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    font-size: 15px;
+}
+.span-kanan {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin-left: 390px;
+    width: 100%; 
+}
+
+.span1, .span2, .span3 {
+    flex-wrap: wrap;
+    text-align: center;
+    flex: 1;
+    margin: 30px;
+    min-width: 120px; 
+}
+
+.span-kanan p {
+    font-size: 13px;
+    margin: 0;
+    white-space: nowrap; 
+}
+
+.span3 a {
+    text-decoration: none;
+    color: black;
+    margin: 5px;
+}
+
+.span-kanan h5 {
+    margin-bottom: 10px;
+    white-space: nowrap; 
+}
+
+@media (max-width: 768px) {
+    body {
+        font-family: 'Poppins';
+    }
+    .header {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .logo {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .logo h1 {
+        display: none;
+    }
+    .logo ul {
+        flex-direction: column;
+    }
+    .logo ul.hidden {
+        display: none;
+    }
+    .logo ul li a:hover {
+        color: #007bff;
+    }
+    .menu-icon {
+        display: flex;
+        cursor: pointer;
+        margin-left: 10px;
+        margin-top: 33px;
+    }
+
+    .kotak-projek {
+        flex-direction: column;
+        align-items: center; 
+    }
+    .kotak-projek img {
+        width: 100%;
+        margin: 0; 
+    }
+    .text-content {
+        order: 2;
+        text-align: center; 
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footer-text {
+        margin-left: 0;
+        order: 2;
+        margin-bottom: 20px;
+    }
+    .span-kanan {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        width: 100%;
+        margin-left: 0;
+    }
+    .span1, .span2, .span3 {
+        margin: 40px;
+        max-width: 200px;
+        text-align: left;
+    }
+}

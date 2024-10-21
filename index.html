@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio | Mutiaa</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+    <div class="header">
+        <div id="menu-icon" class="menu-icon">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="logo">
+        <h1>Mutiaa</h1>
+        <!--<img src="WhatsApp Image 2024-10-13 at 18.12.52_e3baa906.jpg" alt="">  -->
+            <ul id="menu-list" class="hidden">
+                <li>
+                    <a href="#" class="active">HOME</a>
+                </li>
+                <li>
+                    <a href="about.html">ABOUT ME</a>
+                </li>
+                <li>
+                    <a href="project.html">PROJECT</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="kotak-image">
+            <img src="WhatsApp Image 2024-10-13 at 18.12.52_e3baa906.jpg" alt="Foto">
+            <h2>Mutiaa</h2>
+            <p>WEB DEVELOPER</p>
+            <footer>
+                <a href="https://www.tiktok.com/@mtiareigns?is_from_webapp=1&sender_device=pc" target="_blank"><i class="fab fa-tiktok"></i></a>
+                <a href="http://www.youtube.com/@muftimutiarahmah9732" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.instagram.com/wix" target="_blank"><i class="fab fa-instagram"></i></a>
+            </footer>
+        </div>
+        <div class="teks-kanan">
+            <h1>Hello</h1>
+            <h5>Here's who I am & what I do</h5>
+            <button class="btn about" onclick="location.href='about.html'">About me</button>
+            <button class="btn projects" onclick="location.href='project.html'">Projects</button>
+            <p>Halo! Nama saya Mufti Mutia Rahmah, dan ini adalah portofolio saya.</p>
+        </div>
+    </div>
+    <div class="footer">
+        <p class="footer-text">&copy; By Mutiaa Lynch</p>
+        <div class="span-kanan">
+            <div class="span1">
+                <h5>Call</h5>
+                <p>+62 877-1680-7687</p> 
+            </div>
+            <div class="span2">
+                <h5>Penulis</h5>
+                <p>muftimutiar@gmail.com</p>
+            </div>
+            <div class="span3">
+                <h5>Follow</h5>
+                <a href="https://www.tiktok.com/@mtiareigns?is_from_webapp=1&sender_device=pc" target="_blank"><i class="fab fa-tiktok"></i></a>
+                <a href="http://www.youtube.com/@muftimutiarahmah9732" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.instagram.com/@mftee__" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+    <script>
+        const menuIcon = document.getElementById("menu-icon");
+        const menuList = document.getElementById("menu-list");
+
+        menuIcon.addEventListener("click", () => {
+            menuList.classList.toggle("hidden");
+        });
+    </script>
+</body>
+</html>
