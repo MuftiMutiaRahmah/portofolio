@@ -53,7 +53,8 @@ body {
 }
 .container {
     background: linear-gradient(to right, #E6DACE 40%, #fff 40%);
-    height: 100vh;
+    height: auto;
+    padding-bottom: 35vh;
     display: flex;
     position: relative;
 }
