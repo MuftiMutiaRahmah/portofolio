@@ -80,9 +80,6 @@ body {
 }
 .kotak-image h2 {
     margin-top: 30px;
-    background: linear-gradient(#ffe4ca , #cecbc9); 
-    -webkit-background-clip: text; 
-    -webkit-text-fill-color: transparent; 
 }
 .kotak-image p {
     margin-top: 20px;
