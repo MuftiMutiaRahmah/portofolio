@@ -118,45 +118,44 @@ body {
     justify-content: space-between; 
     align-items: center;
     padding: 20px;
+    width: auto;
+    background-color: #fff; /* Optional background for contrast */
 }
+
 .footer-text {
     margin-left: 20px;
-    display: flex;
-    align-items: center;
     white-space: nowrap;
     font-size: 15px;
 }
-.span-kanan {
+
+.footer-sections {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    margin-left: 390px;
-    width: 100%; 
+    justify-content: space-around;
+    width: auto;
+    margin-left: auto;
 }
 
-.span1, .span2, .span3 {
-    flex-wrap: wrap;
+.footer-section {
     text-align: center;
-    flex: 1;
-    margin: 30px;
-    min-width: 120px; 
+    margin: 0 30px;
+    min-width: 120px;
 }
 
-.span-kanan p {
+.footer-section h5 {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.footer-section p {
     font-size: 13px;
     margin: 0;
-    white-space: nowrap; 
 }
 
-.span3 a {
+.footer-section a {
     text-decoration: none;
     color: black;
-    margin: 5px;
-}
-
-.span-kanan h5 {
-    margin-bottom: 10px;
-    white-space: nowrap; 
+    margin: 0 5px;
+    font-size: 18px;
 }
 
 @media (max-width: 768px) {
@@ -204,25 +203,32 @@ body {
         text-align: center; 
     }
 
-    .footer {
-        display: flex;
+    .footer-sections {
         flex-direction: column;
         align-items: flex-start;
-    }
-    .footer-text {
-        margin-left: 0;
-        order: 2;
-        margin-bottom: 20px;
-    }
-    .span-kanan {
-        flex-wrap: wrap;
-        justify-content: flex-start;
         width: 100%;
-        margin-left: 0;
     }
-    .span1, .span2, .span3 {
-        margin: 40px;
-        max-width: 200px;
+
+    .footer-section {
+        width: 100%;
+        max-width: 300px;
+        margin: 15px 0;
         text-align: left;
+        padding: 10px;
+    }
+
+    .footer-section h5 {
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+
+    .footer-section p {
+        font-size: 14px;
+        margin: 5px 0 0;
+    }
+
+    .footer-section a {
+        font-size: 18px;
+        margin: 0 8px;
     }
 }
